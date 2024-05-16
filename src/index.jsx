@@ -9,6 +9,7 @@ import {
 import { Contact } from "./pages/Contact";
 import { About } from "./pages/About";
 import { HomePage } from "./pages/HomePage";
+import { ErrorPage } from "./pages/ErrorPage";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
